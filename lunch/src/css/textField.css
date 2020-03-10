@@ -1,0 +1,39 @@
+/* White Text Field*/
+.white-large{
+    font-weight: bold;
+    color: white;
+    font-size: 4rem;
+}
+.white-title{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+}
+.white-content{
+    font-size: 1.25rem;
+    color: white;
+    font-weight: normal;
+}
+/* Dark White Text Field */
+.darkWhite-content{
+    font-size: 1.25rem;
+    color: #cccdce;
+    font-weight: normal;
+    font-family: 'Times';
+}
+/* Black Text Field*/
+.black-title{
+    font-size: 1.5rem;
+    color: #494949;
+    font-weight: normal;
+}
+.black-content{
+    font-size: 1.25rem;
+    color: #494949;
+    font-weight: normal;
+}
+.black-content-small{
+    font-size: 1rem;
+    color: #494949;
+    font-weight: normal;
+}

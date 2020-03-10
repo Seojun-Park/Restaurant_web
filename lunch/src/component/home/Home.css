@@ -1,0 +1,64 @@
+.homeTopLayout {
+    height: 45rem;
+    text-align: center;
+    color: black;
+    background-size: cover;
+    background-image: url("https://images.unsplash.com/photo-1466637574441-749b8f19452f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=80");
+}
+
+.homeTopLayout p {
+    font-size: 20pt;
+    font-weight: 600;
+}
+
+ .homeTopLayoutImage {
+     width: 350px;
+     @media(max-width: 960px) :{
+         width:200px;
+     }
+}
+
+.follow_button {
+    height: 4rem;
+    width: 12rem;
+    margin-top: 2rem;
+    font-size: 15pt;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+}
+
+.follow_button:hover {
+    transition: 0.2s;
+    background-color: dimgray;
+}
+
+.order_button {
+    height: 3rem;
+    width: 10rem;
+    margin-top: 2rem;
+    font-size: 12pt;
+    border-radius: 15rem;
+    box-shadow: 2px 1px 4px 1px dimgray;
+}
+
+.order_button:hover {
+    transition: 0.2s;
+    background-color: black;
+    color: white;
+}
+
+.view_button {
+    height: 3rem;
+    width: 10rem;
+    margin-top: 2rem;
+    font-size: 12pt;
+    font-weight: 600;
+    border-radius: 15rem;
+}
+
+.view_button:hover {
+    transition: 0.2s;
+    background-color: black;
+    color: white;
+}
