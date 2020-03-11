@@ -74,3 +74,14 @@
     border-radius: 0.5rem;
     border-bottom: 0.1rem dotted #cccccc;
 }
+
+
+.detail_btn {
+    height: 4rem;
+    width: 12rem;
+    margin-top: 2rem;
+    font-size: 15pt;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+}

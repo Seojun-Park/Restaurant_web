@@ -95,6 +95,11 @@ class Board extends Component {
         this.setState({ emptyRows: parseInt(event.target.value, 10) - slicedData.length });
     }
 
+    increaseHit = (id,hit) => {
+        const newhit = this.hit;
+        return newhit
+    }
+
     render() {
         return (
             <div>
@@ -148,7 +153,7 @@ class Board extends Component {
                                                                 createdDate: b.createdDate,
                                                                 hit:b.hit,
                                                             }
-                                                        }} >
+                                                        }} onClick ={this.increaseHit.bind(this, b.id, b.hit)}>
                                                             <TableCell className="table_body">{b.id}</TableCell>
                                                             <TableCell className="table_body">{b.title}</TableCell>
                                                             <TableCell className="table_body">{b.createdby}</TableCell>
@@ -192,7 +197,7 @@ class Board extends Component {
                                                     createdDate: b.createdDate,
                                                     hit: b.hit,
                                                 }
-                                                }} >
+                                                }} onClick={this.increaseHit(this, b.id, b.hit)} >
                                                 <TableCell className="table_body" >{b.id}</TableCell>
                                                 <TableCell className="table_body" >{b.title}</TableCell>
                                                 <TableCell className="table_body" >{b.createdby}</TableCell>

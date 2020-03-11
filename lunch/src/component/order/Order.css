@@ -1,0 +1,110 @@
+.order_Top {
+    height: 12rem;
+    width: 100%;
+    position: relative;    
+}
+
+.orderTop_back {
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 12rem;
+    width: 100%;
+    position: absolute;
+}
+
+.roderTop_img {
+    height: 12rem;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.orderTop_text {
+    z-index: 2;
+    position: absolute;
+    bottom: 3rem;
+    left: 3rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+
+.myOrder {
+    margin-left: 20%;
+    margin-right: 20%;
+    @media screen (max-width:960px) {
+        margin-left: 5%;
+        margin-right: 5%;
+        width:90%;
+    }
+}
+
+.order_root {
+    background-color: white;
+    height: auto;
+    color: #494949;
+    margin-top: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.orderinfo_content {
+    height: auto;
+    width: 85%;
+    padding-left: 1rem;
+    box-sizing: border-box;
+    float: right;
+    @media screen (max-width:960px) {
+        width:70%;
+    }
+}
+
+.orderinfo_contTop {
+    height: 2.5rem;
+    line-height: 2.5rem;
+    width: 100%;
+    box-sizing: border-box;
+    display: inline-flex;
+    border-bottom: 0.1rem dotted #cccccc;
+}
+
+.orderinfo_contMid {
+    height: 2rem;
+    line-height: 2rem;
+    width: 100%;
+    box-sizing: border-box;
+    display: inline-flex;
+    @media screen (max-width:960px){
+        display: contents
+    }
+}
+
+.orderinfo_contBot {
+    height: 2rem;
+    line-height: 2rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.orderinfo_name {
+    font-size: 1.2rem;
+}
+
+.orderinfo_purchase {
+    font-size: 1rem;
+    padding-right: 1rem;
+}
+.orderinfo_delivery {
+    font-size: 1rem;
+    padding-right: 1rem;
+}
+
+.orderinfo_price {
+    font-size: 1rem;
+    padding-right: 1rem;
+}
+
+.orderinfo_status {
+    font-size: 1rem;
+}
