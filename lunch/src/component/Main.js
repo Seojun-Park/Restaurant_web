@@ -6,6 +6,7 @@ import './Main.css'
 
 import Home from './home/Home';
 import Menu from './menu/Menu';
+import Board from './board/Board'
 
 
 class Main extends Component {
@@ -31,7 +32,7 @@ class Main extends Component {
                         <div className="barcont">
                             <Tab label="Home" component={Link} to="/home" />
                             <Tab label="Menu" component={Link} to="/menu" />
-                            <Tab label="About" component={Link} to="/this" />
+                            <Tab label="Board" component={Link} to="/board" />
                             <Tab label="Contact" component={Link} to="/contact" />
                             <Tab label="Login" component={Link} to="/login" />
                         </div>
@@ -40,6 +41,7 @@ class Main extends Component {
                 <Switch>
                     <Route exact path="/home" component={Home} />
                     <Route exact path="/menu" component={Menu} />"
+                    <Route exact path="/board" component={Board} />
                 </Switch>
             </div>
         )

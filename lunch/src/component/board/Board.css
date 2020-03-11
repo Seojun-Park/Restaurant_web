@@ -1,0 +1,76 @@
+.boardTop{
+    height: 12rem;
+    width: 100%;
+    position: relative;
+}
+
+.boardTop_back {
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 12rem;
+    position: absolute;
+}
+
+.boardTop_text {
+    z-index: 2;
+    position: absolute;
+    bottom: 3rem;
+    left: 3rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white
+}
+
+.boardTop_img {
+    height: 12rem;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.table_body {
+    font-family: 'Noto Sans KR';
+    font-size: 1rem;
+    color: #494949;
+    height: 1rem;
+    text-align: center;
+    letter-spacing: 0;
+}
+
+.table_row:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: ease-in 0.1s;
+}
+
+.table_header {
+    font-family: 'Noto Sans KR';
+    font-size: 1rem;
+    font-weight: bold;
+    height: 1rem;
+    letter-spacing: 0;
+}
+
+.search {
+    position: relative;
+    border-radius: 1rem;
+    border-width: 1px;
+    display: flex;
+}
+
+.searchIcon {
+    width: 2rem;
+    height: 100%;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+}
+
+.inputRoot {
+    padding: 0 0.5rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    border-bottom: 0.1rem dotted #cccccc;
+}
