@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 import MapPresenter from './MapPresenter';
 import './Contact.css'
-import { border } from '@material-ui/system';
 
 class Contact extends Component {
     render(){
@@ -18,14 +17,14 @@ class Contact extends Component {
                 <div className="contact_contents">
                     <div className="contact_fchild">
                         <div className="form_tag">
-                            <div style={{ textAlign:"center"}}>
+                            <div className="fchild_title">
                                 <h4>Message</h4>
                             </div>
-                            <div style={{ marginLeft:"4.4rem", border:"1px solid black", marginRight: "6.2rem" }}>
+                            <div style={{ marginLeft:"4.4rem", marginRight: "6.2rem" }}>
                                 <form className="contact_form" method="post">
-                                    <input name="Name" placeholder= "Name" />
-                                    <input name="Email" placeholder="Email address" />
-                                    <input name="Phone" placeholder="Phone number" />
+                                    <input type="text" name="Name" placeholder= "Name" pattern="[a-zA-Z]" />
+                                    <input type="text" name="Email" placeholder="Email address" />
+                                    <input type="text" name="Phone" placeholder="Phone number" />
                                     <textarea name ="content" rows={15} cols={50} placeholder="Message" />
                                     <input type="submit" value="Send" />
                                 </form>
@@ -33,7 +32,28 @@ class Contact extends Component {
                         </div>
                     </div>
                     <div className="contact_schild">
-                        <MapPresenter />
+                        <div className="fchild_title">
+                            <h4>Map</h4>
+                        </div>
+                        <div style={{ marginLeft:"3rem" }}>
+                            <MapPresenter />
+                        </div>
+                    </div>
+                </div>
+                <div className="content_bottom">
+                    <div className="cont_botPhone">
+                        <h3>Contact</h3>
+                        <p>
+                           000-0000-0000 
+                        </p>
+                        <input type="button" value="Book a Table" />
+                    </div>
+                    <div className="cont_follow">
+                        <h3>Follow us</h3>
+                    </div>
+                    <div className="folw_img">
+                        <a href="/"><img src="https://www.procop.com/web/wp-content/uploads/2015/07/instagram-glyph-1-png-transparent-logo-2.png" width="4%" alt="insta logo" /></a>
+                        <a hreft="/"><img src="https://i.pinimg.com/originals/ca/3b/f0/ca3bf05cfab74677e5b73b130bd30991.png" width="4.1%" alt="facebook img" /></a>
                     </div>
                 </div>
             </div>
