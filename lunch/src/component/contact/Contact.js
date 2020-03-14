@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 import MapPresenter from './MapPresenter';
 import './Contact.css'
@@ -32,11 +33,15 @@ class Contact extends Component {
                         </div>
                     </div>
                     <div className="contact_schild">
-                        <div className="fchild_title">
+                        <div className="fchild_title2">
                             <h4>Map</h4>
                         </div>
-                        <div style={{ marginLeft:"3rem" }}>
+                        <div style={{ marginLeft:"3rem", height:"27rem"}}>
                             <MapPresenter />
+                        </div>
+                        <div className="fchild_address">
+                            <h4>Ecole 42</h4>
+                            96 Boulevard Bessières, 75017 Paris, France
                         </div>
                     </div>
                 </div>
@@ -52,8 +57,11 @@ class Contact extends Component {
                         <h3>Follow us</h3>
                     </div>
                     <div className="folw_img">
-                        <a href="/"><img src="https://www.procop.com/web/wp-content/uploads/2015/07/instagram-glyph-1-png-transparent-logo-2.png" width="4%" alt="insta logo" /></a>
-                        <a hreft="/"><img src="https://i.pinimg.com/originals/ca/3b/f0/ca3bf05cfab74677e5b73b130bd30991.png" width="4.1%" alt="facebook img" /></a>
+                        <div>
+                            <Link to="/"> <img src="https://www.procop.com/web/wp-content/uploads/2015/07/instagram-glyph-1-png-transparent-logo-2.png" width="4%" alt="insta logo" /></Link>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <Link to="/"><img src="https://i.pinimg.com/originals/ca/3b/f0/ca3bf05cfab74677e5b73b130bd30991.png" width="4.1%" alt="facebook img" /> </Link>
+                        </div>
                     </div>
                 </div>
             </div>

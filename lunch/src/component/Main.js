@@ -9,6 +9,7 @@ import Menu from './menu/Menu';
 import Board from './board/Board'
 import Order from './order/Order';
 import Contact from './contact/Contact';
+import Login from './login/Login';
 
 
 class Main extends Component {
@@ -47,6 +48,7 @@ class Main extends Component {
                     <Route exact path="/board" component={Board} />
                     <Route exact path="/order" component={Order} />
                     <Route exact path="/contact" component={Contact} />
+                    <Route exact path="/login" component={Login} />
                 </Switch>
             </div>
         )

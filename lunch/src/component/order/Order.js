@@ -24,7 +24,7 @@ class Order extends Component {
                 throw new Error(res.statusText);
             }
             return res.json();
-        }). then(res => {
+        }).then(res => {
             this.setState({
                 orderData : res
             })
